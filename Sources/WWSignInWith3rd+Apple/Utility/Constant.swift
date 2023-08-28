@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - 常數
-final class Constant: NSObject {}
+open class Constant: NSObject {}
 
 // MARK: - enum
 extension Constant {
