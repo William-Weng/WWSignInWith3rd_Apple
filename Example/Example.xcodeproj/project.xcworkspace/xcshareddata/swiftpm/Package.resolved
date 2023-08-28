@@ -8,6 +8,15 @@
         "revision" : "67b58781fca2d400202f93c27ef695805947a717",
         "version" : "1.0.1"
       }
+    },
+    {
+      "identity" : "wwsigninwith3rd_apple",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWSignInWith3rd_Apple",
+      "state" : {
+        "revision" : "5a4c45562aaba8e4bab6e94b2dd52db480db8920",
+        "version" : "1.0.0"
+      }
     }
   ],
   "version" : 2
