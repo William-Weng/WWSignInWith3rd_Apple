@@ -27,6 +27,14 @@ public extension Data {
     func _string(using encoding: String.Encoding = .utf8) -> String? {
         return String(bytes: self, encoding: encoding)
     }
+    
+    /// Data => JSON
+    /// - 7b2268747470223a2022626f6479227d => {"http": "body"}
+    /// - Returns: Any?
+    func _jsonObject(options: JSONSerialization.ReadingOptions = .allowFragments) -> Any? {
+        let json = try? JSONSerialization.jsonObject(with: self, options: options)
+        return json
+    }
 }
 
 // MARK: - URL (static function)
