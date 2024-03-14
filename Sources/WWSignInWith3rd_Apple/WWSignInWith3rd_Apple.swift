@@ -1,6 +1,6 @@
 //
-//  WWSignInWith3rd+Apple.swift
-//  WWSignInWith3rd+Apple
+//  WWSignInWith3rd_Apple.swift
+//  WWSignInWith3rd_Apple
 //
 //  Created by William.Weng on 2028/8/25.
 //
