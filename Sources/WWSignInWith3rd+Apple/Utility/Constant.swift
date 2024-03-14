@@ -11,10 +11,10 @@ import Foundation
 open class Constant: NSObject {}
 
 // MARK: - enum
-extension Constant {
+public extension Constant {
     
     /// 自訂錯誤
-    public enum MyError: Error, LocalizedError {
+    enum MyError: Error, LocalizedError {
         
         var errorDescription: String { errorMessage() }
 
