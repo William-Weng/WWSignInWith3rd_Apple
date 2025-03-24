@@ -12,10 +12,8 @@
 		3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87926F198EF00522E3B /* Main.storyboard */; };
 		3DBCD87D26F198F300522E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87C26F198F300522E3B /* Assets.xcassets */; };
 		3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87E26F198F300522E3B /* LaunchScreen.storyboard */; };
-		811CF0482A9C891400070F97 /* WWSignInWith3rd+Apple in Frameworks */ = {isa = PBXBuildFile; productRef = 811CF0472A9C891400070F97 /* WWSignInWith3rd+Apple */; };
-		8130039027D5D18100436128 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130038F27D5D18100436128 /* Constant.swift */; };
-		8130039227D5D19000436128 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130039127D5D19000436128 /* Extension.swift */; };
-		81420D852A9C7F8E002CE8FF /* WWPrint in Frameworks */ = {isa = PBXBuildFile; productRef = 81420D842A9C7F8E002CE8FF /* WWPrint */; };
+		81EC71422D915BF700F270BC /* WWSignInWith3rd_Apple in Frameworks */ = {isa = PBXBuildFile; productRef = 81EC71412D915BF700F270BC /* WWSignInWith3rd_Apple */; };
+		81EC71452D915DDE00F270BC /* WWSignInWith3rd_Apple in Frameworks */ = {isa = PBXBuildFile; productRef = 81EC71442D915DDE00F270BC /* WWSignInWith3rd_Apple */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +25,6 @@
 		3DBCD87F26F198F300522E3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DBCD88126F198F300522E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8109A9302A9C80D10048970B /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
-		8130038F27D5D18100436128 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		8130039127D5D19000436128 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,8 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81420D852A9C7F8E002CE8FF /* WWPrint in Frameworks */,
-				811CF0482A9C891400070F97 /* WWSignInWith3rd+Apple in Frameworks */,
+				81EC71422D915BF700F270BC /* WWSignInWith3rd_Apple in Frameworks */,
+				81EC71452D915DDE00F270BC /* WWSignInWith3rd_Apple in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +64,6 @@
 				8109A9302A9C80D10048970B /* Example.entitlements */,
 				3DBCD88A26F1995100522E3B /* Setting */,
 				3DBCD88926F1994500522E3B /* Material */,
-				8130038E27D5D17800436128 /* Utility */,
 				3DBCD88826F1993200522E3B /* Storyboard */,
 				3DBCD88726F1992200522E3B /* ViewController */,
 				3DBCD87326F198EF00522E3B /* AppDelegate.swift */,
@@ -109,15 +104,6 @@
 			name = Setting;
 			sourceTree = "<group>";
 		};
-		8130038E27D5D17800436128 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				8130038F27D5D18100436128 /* Constant.swift */,
-				8130039127D5D19000436128 /* Extension.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
 		81A2D58A2A9C7CA5005EC9AE /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +135,8 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				81420D842A9C7F8E002CE8FF /* WWPrint */,
-				811CF0472A9C891400070F97 /* WWSignInWith3rd+Apple */,
+				81EC71412D915BF700F270BC /* WWSignInWith3rd_Apple */,
+				81EC71442D915DDE00F270BC /* WWSignInWith3rd_Apple */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -162,8 +148,9 @@
 		3DBCD86826F198EF00522E3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					3DBCD86F26F198EF00522E3B = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -180,8 +167,7 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				81420D832A9C7F8E002CE8FF /* XCRemoteSwiftPackageReference "WWPrint" */,
-				811CF0462A9C891400070F97 /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */,
+				81EC71432D915DDE00F270BC /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -210,10 +196,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8130039227D5D19000436128 /* Extension.swift in Sources */,
 				3DBCD87826F198EF00522E3B /* ViewController.swift in Sources */,
 				3DBCD87426F198EF00522E3B /* AppDelegate.swift in Sources */,
-				8130039027D5D18100436128 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +260,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -337,6 +322,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -371,6 +357,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.william.Example2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -392,6 +382,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.william.Example2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -421,34 +415,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		811CF0462A9C891400070F97 /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */ = {
+		81EC71432D915DDE00F270BC /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWSignInWith3rd_Apple";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		81420D832A9C7F8E002CE8FF /* XCRemoteSwiftPackageReference "WWPrint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/William-Weng/WWPrint.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		811CF0472A9C891400070F97 /* WWSignInWith3rd+Apple */ = {
+		81EC71412D915BF700F270BC /* WWSignInWith3rd_Apple */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 811CF0462A9C891400070F97 /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */;
-			productName = "WWSignInWith3rd+Apple";
+			productName = WWSignInWith3rd_Apple;
 		};
-		81420D842A9C7F8E002CE8FF /* WWPrint */ = {
+		81EC71442D915DDE00F270BC /* WWSignInWith3rd_Apple */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 81420D832A9C7F8E002CE8FF /* XCRemoteSwiftPackageReference "WWPrint" */;
-			productName = WWPrint;
+			package = 81EC71432D915DDE00F270BC /* XCRemoteSwiftPackageReference "WWSignInWith3rd_Apple" */;
+			productName = WWSignInWith3rd_Apple;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -72,7 +72,7 @@ private extension WWSignInWith3rd.Apple {
         guard let credential = authorization.credential as? ASAuthorizationAppleIDCredential,
               let completionBlock = completionBlock
         else {
-            completionBlock?(.failure(Constant.MyError.isEmpty)); return
+            completionBlock?(.failure(WWSignInWith3rd.CustomError.isEmpty)); return
         }
         
         controller._credentialState(userID: credential.user) { result in

@@ -7,14 +7,11 @@
 
 import Foundation
 
-// MARK: - 常數
-open class Constant: NSObject {}
-
 // MARK: - enum
-public extension Constant {
+public extension WWSignInWith3rd {
     
     /// 自訂錯誤
-    enum MyError: Error, LocalizedError {
+    enum CustomError: Error, LocalizedError {
         
         var errorDescription: String { errorMessage() }
 
