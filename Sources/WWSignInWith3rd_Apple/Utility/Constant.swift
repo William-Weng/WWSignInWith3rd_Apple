@@ -32,11 +32,14 @@ public extension WWSignInWith3rd {
         case notUseBiometric
         case notImage
         case notTypeCasting
-        
+        case otherError(_ message: String)
+        case systemError(_ message: String)
+        case httpError(_ code: Int, data: Data)
+
         /// 顯示錯誤說明
         /// - Returns: String
         private func errorMessage() -> String {
-
+            
             switch self {
             case .unknown: return "未知錯誤"
             case .unregistered: return "尚未註冊"
@@ -55,6 +58,9 @@ public extension WWSignInWith3rd {
             case .notEncoding: return "該資料編碼錯誤"
             case .notImage: return "不是圖片檔"
             case .notTypeCasting: return "不能轉型"
+            case .otherError(let message): return message
+            case .systemError(let message): return message
+            case .httpError(let code, let data): return "\(code) - \(data._string())"
             }
         }
     }
