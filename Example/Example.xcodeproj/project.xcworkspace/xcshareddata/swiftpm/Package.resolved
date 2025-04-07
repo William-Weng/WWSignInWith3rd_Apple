@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWSignInWith3rd_Apple",
       "state" : {
-        "revision" : "9b16dc058d663929e09caea9a04d8fb45ec4668d",
-        "version" : "1.1.2"
+        "revision" : "7dbe9e69a4a245aed69412cd918b8fca1dc9b024",
+        "version" : "1.1.3"
       }
     }
   ],
